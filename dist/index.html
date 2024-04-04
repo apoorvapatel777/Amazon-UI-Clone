@@ -1,0 +1,807 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amazon Tailwind</title>
+    <link href="style.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <!-- --------header -->
+    <div class="w-[100%]  bg-gray-300">
+        <section class="hidden sm:h-16 bg-black max-w-[1170] mx-auto sm:flex">
+
+            <div>
+
+                <div class="sm:hidden">
+                    <span><i class="fa-solid fa-bars text-white text-xl"></i></span>
+                </div>
+
+                <div>
+                    <img src="img/amazon_logo.png" class="h-16  pr-1 cursor-pointer hover:border-[1px]">
+                </div>
+
+
+            </div>
+
+
+            <div
+                class=" text-white flex items-center justify-center  hover:border-[1px] hover:border-white cursor-pointer">
+                <div><i class="fa-solid fa-location-dot text-sm text-white mt-4"></i></div>
+                <div class="grid grid-cols-1 mx-2">
+                    <span class="text-xs">Delivering to Hyderabad 500090</span>
+                    <span class="text-xs font-extrabold">Update location</span>
+                </div>
+            </div>
+
+            <div class="flex">
+                <div class="my-1 px-3 py-6 flex items-center justify-center">
+                    <select
+                        class="text-gray-500 border-l-2 border-y-2 border-orange-500 text-xs h-10 w-12 p-1 text-center bg-gray-300 rounded-l-md cursor-pointer">
+                        <option disabled value="" selected>All</option>
+                        <option value="1">All Category</option>
+                        <option value="2">Alexa Skills</option>
+                        <option value="3">Books</option>
+                    </select>
+                    <div class="text-gray-500">
+                        <input class="border-y-2 border-orange-500 h-10 w-96 text-xs font-bold p-2" type="text"
+                            name="Search Amazon.in" placeholder="Search Amazon.in">
+                    </div>
+                    <button class="bg-orange-300 border-r-2 border-y-2 border-orange-500  h-10 w-10 rounded-r-md">
+                        <span><i class="fa-solid fa-magnifying-glass"></i></span>
+                    </button>
+
+                </div>
+
+
+            </div>
+
+            <div class="flex items-center justify-center pt-5 cursor-pointer hover:border-[1px] hover:border-white">
+                <div><i class="fa-regular fa-flag text-xl text-white ml-3 mr-1"></i></div>
+                <div class="text-white text-sm">EN</div>
+                <span><i class="fa-solid fa-caret-down text-white font-xs mx-1"></i></span>
+            </div>
+
+            <div class=" grid grid-cols-1 p-1 mx-3 cursor-pointer hover:border-[1px] hover:border-white">
+                <span class="text-white text-xs h-2 mt-3">Hello, sign in</span>
+                <span class="text-white text-s font-bold">Accounts & Lists<span
+                        class="fa-solid fa-caret-down text-white font-xs mx-1"></span>
+                </span>
+            </div>
+
+
+            <div class=" grid grid-cols-1 m-1 mx-3 pr-1 cursor-pointer hover:border-[1px] hover:border-white">
+                <span class="text-white text-xs h-2 mt-3 mb-1 ">Returns</span>
+                <span class="text-white text-s font-bold">& Orders</span>
+            </div>
+
+            <div class="flex items-center mt-4 cursor-pointer hover:border-[1px] hover:border-white">
+                <span><i class="fa-solid fa-cart-shopping text-white text-xl pr-1"></i></span>
+                <span class=" text-white text-s font-bold hidden sm:block">Cart</span>
+            </div>
+
+
+
+        </section>
+        <!-- ------header2------ -->
+        <section class="hidden sm:block bg-[#23303d]">
+            <div class="flex gap-1 text-[13px]  justify-center text-white font-semibold cursor-pointer">
+                <div class="hover:border rounded-md outline-white p-2">
+                    <i class="fa-solid fa-bars"></i>
+                    <a href="#">All</a>
+                </div>
+                <a href="#" class="hover:border-[1px] rounded-md outline-white p-2">Fresh</a>
+                <a href="#" class="hover:border-[1px] rounded-md outline-white p-2">Amazon miniTV</a>
+                <a href="#" class="hover:border-[1px] rounded-md outline-white p-2">Sell</a>
+                <a href="#" class="hover:border-[1px] rounded-md outline-white p-2">Best Sellers</a>
+                <a href="#" class="hover:border-[1px] rounded-md outline-white p-2">Today's Deals</a>
+                <a href="#" class="hover:border-[1px] rounded-md outline-white p-2">Mobiles</a>
+                <a href="#" class="hover:border-[1px] rounded-md outline-white p-2">Customer Service</a>
+                <a href="#" class="hover:border-[1px] rounded-md outline-white p-2">Electronics</a>
+                <a href="#" class="hover:border-[1px] rounded-md outline-white p-2">New Releases</a>
+                <div class="hover:border-[1px] rounded-md outline-white p-2">
+                    <a href="#">Prime</a>
+                    <i class="fa-solid fa-caret-down text-gray-400"></i>
+                </div>
+                <a href="#" class="hover:border-[1px] rounded-md outline-white p-2">Home & Kitchen</a>
+                <a href="#" class="hover:border-[1px] rounded-md outline-white p-2">Fashion</a>
+                <a href="#" class="hover:border-[1px] rounded-md outline-white p-2">Gift Ideas</a>
+
+            </div>
+        </section>
+
+
+        <!-- mobile header -->
+        <section class="sm:hidden ">
+            <div class="bg-[#23303d]">
+                <div class="flex px-4 justify-center">
+                    <div class="flex items-center gap-1">
+                        <span><i class="fa-solid fa-bars text-white text-2xl"></i></span>
+                        <div>
+                            <img src="img/amazon_logo.png" class="h-12  pr-1 cursor-pointer hover:border-[1px]">
+                        </div>
+                    </div>
+                    <div class="flex ml-auto gap-4 items-center">
+                        <div>
+                            <span class="text-white text-s">Sign in</span>
+                            <span class="text-gray-400 text-xs">></span>
+                            <span><i class="fa-regular fa-user text-white font-bold text-2xl"></i></span>
+                        </div>
+                        <div>
+                            <span><i class="fa-solid fa-cart-shopping text-2xl text-white"></i></span>
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <div class="pb-1 flex justify-center">
+                    <div class="text-gray-500">
+                        <input class="border-y-2 border-l-2 rounded-l-md h-10 w-80 text-xs font-bold p-2" type="text"
+                            name="Search Amazon.in" placeholder="Search Amazon.in">
+                    </div>
+                    <button class=" border-r-2 border-y-2 bg-orange-300 border-orange-300 h-10 w-10 rounded-r-md">
+                        <span><i class="fa-solid fa-magnifying-glass text-xl"></i></span>
+                    </button>
+                </div>
+            </div>
+
+
+            <div class="bg-[#374859]">
+                <div class="flex justify-center">
+                    <div class="px-4 py-3">
+                        <span><i class="fa-solid fa-location-dot text-white"></i></span>
+                        <span class="text-white text-xs">
+                            Delivering to Hyderabad 500090 - Update location ⌵
+                        </span>
+                    </div>
+                </div>
+
+            </div>
+
+
+        </section>
+
+
+
+
+
+
+
+
+        <!-- ---------banner image----- -->
+        <section class="max-w-[100%] h-auto">
+            <img src="img/LIGHTING-GWUNRECPC._CB570774247_.jpg">
+        </section>
+        <!-- -------------- -->
+        <section class="grid sm:grid-cols-3 grid-cols-1 bg-gray-300 gap-1">
+            <div class="bg-white m-5">
+
+                <h2 class="text-xl font-bold ml-8 mb-4 mt-6">Up to 75% off | Headphones</h2>
+                <div class="grid grid-cols-2 place-items-center mb-10">
+
+                    <div>
+                        <img src="img/Boat_Desktop_Qc_1x._SY116_CB577919562_.jpg" class=" h-28 w-36">
+                        <span class="text-xs">Up to 75% off | boAt</span>
+                    </div>
+                    <div>
+                        <img src="img/Boat_Desktop_Qc_1x._SY116_CB577919562_.jpg" class=" h-28 w-36">
+                        <span class="text-xs">Up to 75% off | boAt</span>
+                    </div>
+                    <div>
+                        <img src="img/Boat_Desktop_Qc_1x._SY116_CB577919562_.jpg" class=" h-28 w-36">
+                        <span class="text-xs">Up to 75% off | boAt</span>
+                    </div>
+                    <div>
+                        <img src="img/Boat_Desktop_Qc_1x._SY116_CB577919562_.jpg" class=" h-28 w-36">
+                        <span class="text-xs">Up to 75% off | boAt</span>
+                    </div>
+                </div>
+                <div class=" ml-8 mb-5">
+                    <a href="#" class="text-xs text-blue-300 font-bold">See all offers</a>
+                </div>
+            </div>
+
+            <div class="bg-white m-5">
+
+                <h2 class="text-xl font-bold ml-8 mb-4 mt-6">Get the perfect screen size | TVs Starting ₹6,999</h2>
+                <div class="grid grid-cols-2 place-items-center mb-10">
+
+                    <div>
+                        <img src="img/2x_Desktop_Quad_card_w_title_-_Card_10.5x._SY116_CB570558331_.jpg"
+                            class=" h-28 w-36">
+                        <span class="text-xs">Up to 75% off | boAt</span>
+                    </div>
+                    <div>
+                        <img src="img/2x_Desktop_Quad_card_w_title_-_Card_10.5x._SY116_CB570558331_.jpg"
+                            class=" h-28 w-36">
+                        <span class="text-xs">Up to 75% off | boAt</span>
+                    </div>
+                    <div>
+                        <img src="img/2x_Desktop_Quad_card_w_title_-_Card_10.5x._SY116_CB570558331_.jpg"
+                            class=" h-28 w-36">
+                        <span class="text-xs">Up to 75% off | boAt</span>
+                    </div>
+                    <div>
+                        <img src="img/2x_Desktop_Quad_card_w_title_-_Card_10.5x._SY116_CB570558331_.jpg"
+                            class=" h-28 w-36">
+                        <span class="text-xs">Up to 75% off | boAt</span>
+                    </div>
+                </div>
+                <div class=" ml-8 mb-5">
+                    <a href="#" class="text-xs text-blue-300 font-bold">See all offers</a>
+                </div>
+            </div>
+
+            <div class="bg-white m-5">
+
+                <h2 class="text-xl font-bold ml-8 mb-4 mt-6">Up to 75% off | Headphones</h2>
+                <div class="grid grid-cols-2 place-items-center mb-10">
+
+                    <div>
+                        <img src="img/186x116---wm._SY116_CB667322346_.jpg" class=" h-28 w-36">
+                        <span class="text-xs">Up to 75% off | boAt</span>
+                    </div>
+                    <div>
+                        <img src="img/186x116---wm._SY116_CB667322346_.jpg" class=" h-28 w-36">
+                        <span class="text-xs">Up to 75% off | boAt</span>
+                    </div>
+                    <div>
+                        <img src="img/186x116---wm._SY116_CB667322346_.jpg" class=" h-28 w-36">
+                        <span class="text-xs">Up to 75% off | boAt</span>
+                    </div>
+                    <div>
+                        <img src="img/186x116---wm._SY116_CB667322346_.jpg" class=" h-28 w-36">
+                        <span class="text-xs">Up to 75% off | boAt</span>
+                    </div>
+                </div>
+                <div class=" ml-8 mb-5">
+                    <a href="#" class="text-xs text-blue-300 font-bold">See all offers</a>
+                </div>
+            </div>
+
+            <div class="bg-white m-5">
+
+                <h2 class="text-xl font-bold ml-8 mb-4 mt-6">Up to 75% off | Headphones</h2>
+                <div class="grid grid-cols-2 place-items-center mb-10">
+
+                    <div>
+                        <img src="img/372x232_1_Low._SY116_CB670263840_.jpg" class=" h-28 w-36">
+                        <span class="text-xs">Up to 75% off | boAt</span>
+                    </div>
+                    <div>
+                        <img src="img/372x232_1_Low._SY116_CB670263840_.jpg" class=" h-28 w-36">
+                        <span class="text-xs">Up to 75% off | boAt</span>
+                    </div>
+                    <div>
+                        <img src="img/372x232_1_Low._SY116_CB670263840_.jpg" class=" h-28 w-36">
+                        <span class="text-xs">Up to 75% off | boAt</span>
+                    </div>
+                    <div>
+                        <img src="img/372x232_1_Low._SY116_CB670263840_.jpg" class=" h-28 w-36">
+                        <span class="text-xs">Up to 75% off | boAt</span>
+                    </div>
+                </div>
+                <div class=" ml-8 mb-5">
+                    <a href="#" class="text-xs text-blue-300 font-bold">See all offers</a>
+                </div>
+            </div>
+
+            <div class="bg-white m-5">
+
+                <h2 class="text-xl font-bold ml-8 mb-4 mt-6">Up to 75% off | Headphones</h2>
+                <div class="grid grid-cols-2 place-items-center mb-10">
+
+                    <div>
+                        <img src="img/Kitchen_PC_QC_186_1._SY116_CB570512815_.jpg" class=" h-28 w-36">
+                        <span class="text-xs">Up to 75% off | boAt</span>
+                    </div>
+                    <div>
+                        <img src="img/Kitchen_PC_QC_186_1._SY116_CB570512815_.jpg" class=" h-28 w-36">
+                        <span class="text-xs">Up to 75% off | boAt</span>
+                    </div>
+                    <div>
+                        <img src="img/Kitchen_PC_QC_186_1._SY116_CB570512815_.jpg" class=" h-28 w-36">
+                        <span class="text-xs">Up to 75% off | boAt</span>
+                    </div>
+                    <div>
+                        <img src="img/Kitchen_PC_QC_186_1._SY116_CB570512815_.jpg" class=" h-28 w-36">
+                        <span class="text-xs">Up to 75% off | boAt</span>
+                    </div>
+                </div>
+                <div class=" ml-8 mb-5">
+                    <a href="#" class="text-xs text-blue-300 font-bold">See all offers</a>
+                </div>
+            </div>
+
+            <div class="bg-white m-5">
+
+                <h2 class="text-xl font-bold ml-8 mb-4 mt-6">Up to 75% off | Headphones</h2>
+                <div class="grid grid-cols-2 place-items-center mb-10">
+
+                    <div>
+                        <img src="img/QC-adapts_186x116_3._SY116_CB600489960_.jpg" class=" h-28 w-36">
+                        <span class="text-xs">Up to 75% off | boAt</span>
+                    </div>
+                    <div>
+                        <img src="img/QC-adapts_186x116_3._SY116_CB600489960_.jpg" class=" h-28 w-36">
+                        <span class="text-xs">Up to 75% off | boAt</span>
+                    </div>
+                    <div>
+                        <img src="img/QC-adapts_186x116_3._SY116_CB600489960_.jpg" class=" h-28 w-36">
+                        <span class="text-xs">Up to 75% off | boAt</span>
+                    </div>
+                    <div>
+                        <img src="img/QC-adapts_186x116_3._SY116_CB600489960_.jpg" class=" h-28 w-36">
+                        <span class="text-xs">Up to 75% off | boAt</span>
+                    </div>
+                </div>
+                <div class=" ml-8 mb-5">
+                    <a href="#" class="text-xs text-blue-300 font-bold">See all offers</a>
+                </div>
+            </div>
+
+            <div class="bg-white m-5">
+
+                <h2 class="text-xl font-bold ml-8 mb-4 mt-6">Up to 75% off | Headphones</h2>
+                <div class="grid grid-cols-2 place-items-center mb-10">
+
+                    <div>
+                        <img src="img/Glasscare1X._SY116_CB410830553_.jpg" class=" h-28 w-36">
+                        <span class="text-xs">Up to 75% off | boAt</span>
+                    </div>
+                    <div>
+                        <img src="img/Glasscare1X._SY116_CB410830553_.jpg" class=" h-28 w-36">
+                        <span class="text-xs">Up to 75% off | boAt</span>
+                    </div>
+                    <div>
+                        <img src="img/Glasscare1X._SY116_CB410830553_.jpg" class=" h-28 w-36">
+                        <span class="text-xs">Up to 75% off | boAt</span>
+                    </div>
+                    <div>
+                        <img src="img/Glasscare1X._SY116_CB410830553_.jpg" class=" h-28 w-36">
+                        <span class="text-xs">Up to 75% off | boAt</span>
+                    </div>
+                </div>
+                <div class=" ml-8 mb-5">
+                    <a href="#" class="text-xs text-blue-300 font-bold">See all offers</a>
+                </div>
+            </div>
+
+            <div class="bg-white m-5">
+
+                <h2 class="text-xl font-bold ml-8 mb-4 mt-6">Up to 75% off | Headphones</h2>
+                <div class="grid grid-cols-2 place-items-center mb-10">
+
+                    <div>
+                        <img src="img/Tools1x._SY116_CB424026090_.jpg" class=" h-28 w-36">
+                        <span class="text-xs">Up to 75% off | boAt</span>
+                    </div>
+                    <div>
+                        <img src="img/Tools1x._SY116_CB424026090_.jpg" class=" h-28 w-36">
+                        <span class="text-xs">Up to 75% off | boAt</span>
+                    </div>
+                    <div>
+                        <img src="img/Tools1x._SY116_CB424026090_.jpg" class=" h-28 w-36">
+                        <span class="text-xs">Up to 75% off | boAt</span>
+                    </div>
+                    <div>
+                        <img src="img/Tools1x._SY116_CB424026090_.jpg" class=" h-28 w-36">
+                        <span class="text-xs">Up to 75% off | boAt</span>
+                    </div>
+                </div>
+                <div class=" ml-8 mb-5">
+                    <a href="#" class="text-xs text-blue-300 font-bold">See all offers</a>
+                </div>
+            </div>
+
+            <div class="bg-white m-5">
+
+                <h2 class="text-xl font-bold ml-8 mb-4 mt-6">Up to 75% off | Headphones</h2>
+                <div class="grid grid-cols-2 place-items-center mb-10">
+
+                    <div>
+                        <img src="img/Flight_186x116._SY116_CB618818544_.jpg" class=" h-28 w-36">
+                        <span class="text-xs">Up to 75% off | boAt</span>
+                    </div>
+                    <div>
+                        <img src="img/Flight_186x116._SY116_CB618818544_.jpg" class=" h-28 w-36">
+                        <span class="text-xs">Up to 75% off | boAt</span>
+                    </div>
+                    <div>
+                        <img src="img/Flight_186x116._SY116_CB618818544_.jpg" class=" h-28 w-36">
+                        <span class="text-xs">Up to 75% off | boAt</span>
+                    </div>
+                    <div>
+                        <img src="img/Flight_186x116._SY116_CB618818544_.jpg" class=" h-28 w-36">
+                        <span class="text-xs">Up to 75% off | boAt</span>
+                    </div>
+                </div>
+                <div class=" ml-8 mb-5">
+                    <a href="#" class="text-xs text-blue-300 font-bold">See all offers</a>
+                </div>
+            </div>
+
+
+        </section>
+        <!-- -----todays deal -->
+
+        <section class="bg-gray-300 max-w-[100%] h-auto">
+
+            <div class="bg-white ml-5 mr-5 ">
+
+                <div class="ml-2 mr-2">
+                    <div class="flex pt-6">
+                        <h2 class="text-2xl font-bold m-2">Today’s Deals</h2>
+                        <a href="#" class="text-xs font-bold text-blue-300 mt-5 ml-4">See all deals</a>
+                    </div>
+
+                    <div class="grid sm:grid-flow-col grid-cols-2 gap-2">
+
+                        <div>
+                            <div class="grid grid-cols-1 m-2 ">
+                                <div class="bg-gray-300">
+                                    <div class="h-30 w-30">
+                                        <img src="img/31Q0xVpBphL._AC_SY200_.jpg"
+                                            class="mx-auto w-20 mt-4 items-center">
+                                    </div>
+                                </div>
+                                <div class="mt-2 mb-1">
+                                    <span class="text-[12px] text-white bg-red-700 p-1">Up to 76% off</span>
+                                    <span class="text-xs text-red-700">Ends in 04:12:40</span>
+                                </div>
+                                <div>
+                                    <span class="text-xs font-bold">Branded Suitcase Trolleys - American…</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div>
+                            <div class="grid grid-cols-1 m-2 place-items-center">
+                                <div class="h-30 w-30 bg-gray-300">
+                                    <img src="img/31z4C+OPevL._CB603089308_._SY200__AC_SY200_.jpg"
+                                        class="h-[162px] object-cover m-4 items-center">
+                                </div>
+                                <div class="mt-2 mb-1">
+                                    <span class="text-[12px] text-white bg-red-700 p-1">Up to 76% off</span>
+                                    <span class="text-xs text-red-700">Ends in 04:12:40</span>
+                                </div>
+                                <div>
+                                    <span class="text-xs font-bold">Branded Suitcase Trolleys - American…</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div>
+                            <div class="grid grid-cols-1 m-2">
+                                <div class="bg-gray-300">
+                                    <div class="h-30 w-30">
+                                        <img src="img/31Q0xVpBphL._AC_SY200_.jpg"
+                                            class="mx-auto w-20 mt-4 items-center">
+                                    </div>
+                                </div>
+                                <div class="mt-2 mb-1">
+                                    <span class="text-[12px] text-white bg-red-700 p-1">Up to 76% off</span>
+                                    <span class="text-xs text-red-700">Ends in 04:12:40</span>
+                                </div>
+                                <div>
+                                    <span class="text-xs font-bold">Branded Suitcase Trolleys - American…</span>
+                                </div>
+                            </div>
+                        </div>
+
+
+
+                        <div>
+                            <div class="grid grid-cols-1 m-2 place-items-center">
+
+                                <div class="h-30 w-30 bg-gray-300">
+                                    <img src="img/31z4C+OPevL._CB603089308_._SY200__AC_SY200_.jpg"
+                                        class="h-[162px] object-cover m-4 items-center">
+                                </div>
+
+                                <div class="mt-2 mb-1">
+                                    <span class="text-[12px] text-white bg-red-700 p-1">Up to 76% off</span>
+                                    <span class="text-xs text-red-700">Ends in 04:12:40</span>
+                                </div>
+                                <div>
+                                    <span class="text-xs font-bold">Branded Suitcase Trolleys - American…</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div>
+                            <div class="grid grid-cols-1 m-2">
+                                <div class="bg-gray-300">
+                                    <div class="h-30 w-30">
+                                        <img src="img/31Q0xVpBphL._AC_SY200_.jpg"
+                                            class="mx-auto w-20 mt-4 items-center">
+                                    </div>
+                                </div>
+                                <div class="mt-2 mb-1">
+                                    <span class="text-[12px] text-white bg-red-700 p-1">Up to 76% off</span>
+                                    <span class="text-xs text-red-700">Ends in 04:12:40</span>
+                                </div>
+                                <div>
+                                    <span class="text-xs font-bold">Branded Suitcase Trolleys - American…</span>
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+
+
+            </div>
+
+
+        </section>
+
+
+        <!-- ---------Best seller -->
+        <section class="bg-gray-300 max-w-[100%] h-auto">
+            <div class="pt-5 flex justify-center">
+                <div class="bg-white p-5">
+                    <div class="pt-2">
+                        <span class="m-2 text-2xl font-bold">Best Sellers in Sports, Fitness &
+                            Outdoors</span>
+                    </div>
+                    <div class="grid sm:grid-rows-1 grid-cols-2 grid-flow-row sm:grid-flow-col m-2 gap-9">
+                        <img src="img/51+b9IWWbjL._AC_SY200_.jpg" class="h-40 w-40">
+                        <img src="img/61KreB4x-SL._AC_SY200_.jpg" class="h-40 w-40">
+                        <img src="img/51+b9IWWbjL._AC_SY200_.jpg" class="h-40 w-40">
+                        <img src="img/61KreB4x-SL._AC_SY200_.jpg" class="h-40 w-40">
+                        <img src="img/51+b9IWWbjL._AC_SY200_.jpg" class="h-40 w-40">
+                        <img src="img/61KreB4x-SL._AC_SY200_.jpg" class="h-40 w-40">
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+
+        <!-- ------trendy home decor -->
+
+        <section class="bg-gray-300 max-w-[100%] h-auto">
+            <div class="pt-5 flex justify-center">
+                <div class="bg-white p-5 mb-5">
+                    <div class="pt-2">
+                        <span class="m-2 text-2xl font-bold">Trendy home decor</span>
+                    </div>
+                    <div class="grid sm:grid-rows-1 grid-cols-2 grid-flow-row sm:grid-flow-col m-2 gap-9">
+                        <img src="img/61X8sl5XoxL._AC_SY200_.jpg" class="h-40 w-40">
+                        <img src="img/81PxikOZzqL._AC_SY200_.jpg" class="h-40 w-40">
+                        <img src="img/71uB4BEEx-L._AC_SY200_.jpg" class="h-40 w-40">
+                        <img src="img/91s7rC+IDBL._AC_SY200_.jpg" class="h-40 w-40">
+                        <img src="img/compressed_379x304_compressed._SY304_CB592193370_.jpg" class="h-40 w-40">
+                        <img src="img/81wN5ep5CAL._AC_SY200_.jpg" class="h-40 w-40">
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+    </div>
+
+
+
+
+    <!-- -------Sign In-------- -->
+    <section class="max-w-[100%] h-auto pt-14 pb-8 bg-white">
+        <div class="bg-white border-y-[1px] border-gray-400 my-">
+            <div class="grid grid-flow-row place-content-center pt-12 pb-6">
+                <span class="text-xs font-bold pl-2 mb-1">See personalized recommendations</span>
+                <button class="w-[235px] text-sm font-black bg-[#ffcd63] border-orange-600 border-2 rounded mb-1">Sign
+                    in</button>
+                <div class="flex place-content-center">
+                    <span class="text-xs font-bold">New customer?</span>
+                    <a hreh="#" class="text-xs text-blue-500 pl-2">Start here.</a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <!-- --------back to top--------- -->
+    <section class="bg-[#374859]">
+        <div class="flex justify-center py-4">
+            <span class="text-xs text-white font-bold">Back to top</span>
+        </div>
+    </section>
+
+    <!-- --------Get to Know Us------- -->
+
+    <section class="bg-[#23303d]">
+        <!-- top -->
+        <div class="grid grid-cols-2  sm:grid-cols-4 place-content-center sm:pl-32 pl-10 gap-2">
+
+            <div class="pt-10 pb-10">
+                <div class="pb-3 text-s font-bold text-white">Get to Know Us</div>
+                <div class="grid grid-cols-1">
+                    <a href="#" class="pb-1 text-xs text-white hover:underline">About Us</a>
+                    <a href="#" class="pb-1 text-xs text-white hover:underline">Careers</a>
+                    <a href="#" class="pb-1 text-xs text-white hover:underline">Press Releases</a>
+                    <a href="#" class="pb-1 text-xs text-white hover:underline">Amazon Science</a>
+                </div>
+            </div>
+
+            <div class="pt-10 pb-10">
+                <div class="pb-3 text-s font-bold text-white">Connect with Us</div>
+                <div class="grid grid-cols-1">
+                    <a href="#" class="pb-1 text-xs text-white hover:underline">Facebook</a>
+                    <a href="#" class="pb-1 text-xs text-white hover:underline">Twitter</a>
+                    <a href="#" class="pb-1 text-xs text-white hover:underline">Instagram</a>
+                </div>
+            </div>
+
+            <div class="pt-10 pb-10">
+                <div class="pb-3 text-s font-bold text-white">Make Money with Us</div>
+                <div class="grid grid-cols-1">
+                    <a href="#" class="pb-1 text-xs text-white hover:underline">Sell on Amazon</a>
+                    <a href="#" class="pb-1 text-xs text-white hover:underline">Sell under Amazon Accelerator</a>
+                    <a href="#" class="pb-1 text-xs text-white hover:underline">Protect and Build Your Brand</a>
+                    <a href="#" class="pb-1 text-xs text-white hover:underline">Amazon Global Selling</a>
+                    <a href="#" class="pb-1 text-xs text-white hover:underline">Become an Affiliate</a>
+                    <a href="#" class="pb-1 text-xs text-white hover:underline">Fulfilment by Amazon</a>
+                    <a href="#" class="pb-1 text-xs text-white hover:underline">Advertise Your Products</a>
+                    <a href="#" class="pb-1 text-xs text-white hover:underline">Amazon Pay on Merchants</a>
+                </div>
+            </div>
+
+            <div class="pt-10 pb-10">
+                <div class="pb-3 text-s font-bold text-white">Let Us Help You</div>
+                <div class="grid grid-cols-1">
+                    <a href="#" class="pb-1 text-xs text-white hover:underline">COVID-19 and Amazon</a>
+                    <a href="#" class="pb-1 text-xs text-white hover:underline">Your Account</a>
+                    <a href="#" class="pb-1 text-xs text-white hover:underline">Returns Centre</a>
+                    <a href="#" class="pb-1 text-xs text-white hover:underline">100% Purchase Protection</a>
+                    <a href="#" class="pb-1 text-xs text-white hover:underline">Amazon App Download</a>
+                    <a href="#" class="pb-1 text-xs text-white hover:underline">Help</a>
+                </div>
+            </div>
+
+        </div>
+        <!-- between -->
+        <div class="gap-8 grid grid-rows-1 grid-flow-col items-center place-content-center">
+            <div>
+                <img src="img/amazon_logo.png" class="h-16 w-18  pr-1 cursor-pointer">
+            </div>
+            <div class="border-[1px] border-gray-400 pl-2  w-28 h-8">
+                <i class="fa-solid fa-globe text-white"></i>
+                <select class="text-white bg-[#23303d] pr-1 cursor-pointer text-xs">
+                    <option value="1">English</option>
+                    <option value="2">Hindi</option>
+                    <option value="3">Marathi</option>
+                </select>
+            </div>
+        </div>
+        <!-- bottom -->
+        <div class="pb-5 flex items-center place-content-center">
+            <ul class="flex gap-5 leading-3 justify-center flex-wrap w-[70%]">
+                <li><a href="#" class="text-white text-xs cursor-pointer hover:underline">Australia</a></li>
+                <li><a href="#" class="text-white text-xs cursor-pointer hover:underline">Brazil</a></li>
+                <li><a href="#" class="text-white text-xs cursor-pointer hover:underline">Canada</a></li>
+                <li><a href="#" class="text-white text-xs cursor-pointer hover:underline">China</a></li>
+                <li><a href="#" class="text-white text-xs cursor-pointer hover:underline">France</a></li>
+                <li><a href="#" class="text-white text-xs cursor-pointer hover:underline">Germany</a></li>
+                <li><a href="#" class="text-white text-xs cursor-pointer hover:underline">Italy</a></li>
+                <li><a href="#" class="text-white text-xs cursor-pointer hover:underline">Japan</a></li>
+                <li><a href="#" class="text-white text-xs cursor-pointer hover:underline">Mexico</a></li>
+                <li><a href="#" class="text-white text-xs cursor-pointer hover:underline">Netherlands</a></li>
+                <li><a href="#" class="text-white text-xs cursor-pointer hover:underline">Poland</a></li>
+                <li><a href="#" class="text-white text-xs cursor-pointer hover:underline">Singapore</a></li>
+                <li><a href="#" class="text-white text-xs cursor-pointer hover:underline">Spain</a></li>
+                <li><a href="#" class="text-white text-xs cursor-pointer hover:underline">Turkey</a></li>
+                <li><a href="#" class="text-white text-xs cursor-pointer hover:underline">United Arab
+                        Emirates</a></li>
+                <li><a href="#" class="text-white text-xs cursor-pointer hover:underline">United Kingdom</a>
+                </li>
+                <li><a href="#" class="text-white text-xs cursor-pointer hover:underline">United States</a></li>
+
+            </ul>
+
+        </div>
+
+        <!-- ------- -->
+        <section class="bg-[#131a22] ">
+            <div class="grid sm:grid-cols-4 sm:gap-4 sm:py-8 grid-cols-2 gap-3 pt-5 place-items-center items-center">
+                <div class="text-white">
+                    <a href="#" class="font-bold text-s">Abebooks
+                        <br>
+                        <span class="text-xs text-gray-400 inline-block">Books, art
+                            <br>
+                            & collectibles
+                        </span>
+                    </a>
+                </div>
+                <div class="text-white">
+                    <a href="#" class="font-bold text-s">Abebooks
+                        <br>
+                        <span class="text-xs text-gray-400 inline-block">Books, art
+                            <br>
+                            & collectibles
+                        </span>
+                    </a>
+                </div>
+                <div class="text-white">
+                    <a href="#" class="font-bold text-s">Abebooks
+                        <br>
+                        <span class="text-xs text-gray-400 inline-block">Books, art
+                            <br>
+                            & collectibles
+                        </span>
+                    </a>
+                </div>
+                <div class="text-white">
+                    <a href="#" class="font-bold text-s">Abebooks
+                        <br>
+                        <span class="text-xs text-gray-400 inline-block">Books, art
+                            <br>
+                            & collectibles
+                        </span>
+                    </a>
+                </div>
+                <div class="text-white">
+                    <a href="#" class="font-bold text-s">Abebooks
+                        <br>
+                        <span class="text-xs text-gray-400 inline-block">Books, art
+                            <br>
+                            & collectibles
+                        </span>
+                    </a>
+                </div>
+                <div class="text-white">
+                    <a href="#" class="font-bold text-s">Abebooks
+                        <br>
+                        <span class="text-xs text-gray-400 inline-block">Books, art
+                            <br>
+                            & collectibles
+                        </span>
+                    </a>
+                </div>
+                <div class="text-white">
+                    <a href="#" class="font-bold text-s">Abebooks
+                        <br>
+                        <span class="text-xs text-gray-400 inline-block">Books, art
+                            <br>
+                            & collectibles
+                        </span>
+                    </a>
+                </div>
+                <div class="text-white">
+                    <a href="#" class="font-bold text-s">Abebooks
+                        <br>
+                        <span class="text-xs text-gray-400 inline-block">Books, art
+                            <br>
+                            & collectibles
+                        </span>
+                    </a>
+                </div>
+            </div>
+
+            <div class="text-white text-xs grid place-items-center mt-8 pb-5 sm:pb-8">
+                <div>
+                    <a href="#">Conditions of Use & Sale</a>
+                    <a href="#">Privacy Notice</a>
+                    <a href="#">Interest-Based Ads</a>
+                </div>
+                <span>© 1996-2023, Amazon.com, Inc. or its affiliates</span>
+            </div>
+        </section>
+
+
+    </section>
+
+
+</body>
+
+</html>
